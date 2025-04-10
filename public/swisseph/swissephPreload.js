@@ -1,6 +1,6 @@
 self.Module = {
     onRuntimeInitialized: function () {
-        postMessage("finish");
+        postMessage("preload");
     },
 };
 self.importScripts("astro.js");

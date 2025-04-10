@@ -1,5 +1,8 @@
-import { render } from 'preact'
-import './index.css'
-import { App } from './app.tsx'
+import { render } from 'preact';
+import { App } from './app.tsx';
+import {ToastProvider} from './components/Toast/Toast.tsx'
 
-render(<App />, document.getElementById('app')!)
+render(
+    <ToastProvider>
+        <App />
+    </ToastProvider>, document.getElementById('app')!);
