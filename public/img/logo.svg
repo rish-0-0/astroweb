@@ -1,0 +1,25 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="astrologyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6B46C1"/>
+            <stop offset="50%" stop-color="#3182CE"/>
+            <stop offset="100%" stop-color="#ECC94B"/>
+        </linearGradient>
+
+        <radialGradient id="planetGradient" cx="30%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#ECC94B"/>
+            <stop offset="100%" stop-color="#D69E2E"/>
+        </radialGradient>
+
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.2"/>
+        </filter>
+    </defs>
+
+    <!-- Orbit Path -->
+    <ellipse cx="128" cy="128" rx="100" ry="40"
+             fill="none" stroke="url(#astrologyGradient)" stroke-width="6" transform="rotate(-30,128,128)"/>
+
+    <!-- Planet shifted to 4th Quadrant -->
+    <circle cx="170" cy="150" r="24" fill="url(#planetGradient)" filter="url(#shadow)"/>
+</svg>

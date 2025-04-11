@@ -106,7 +106,7 @@ const Toast = ({ type, message }: ToastProps) => {
     const toastStyle: JSX.CSSProperties = {
         minWidth: '250px',
         padding: '1rem',
-        borderLeft: `1px solid ${borderColor}`,
+        borderLeft: `0.375rem solid ${borderColor}`,
         fontWeight: 'bold',
         backgroundColor: 'white',
         color: 'black',
