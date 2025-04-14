@@ -1,0 +1,22 @@
+/* App.css */
+
+.App {
+    margin: 40px auto;
+    padding: 0 16px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.spacer {
+    margin: 24px 0;
+}
+
+/* Responsive: mobile devices */
+@media (max-width: 600px) {
+    .App {
+        margin: 16px auto;
+        padding: 0 12px;
+    }
+}
